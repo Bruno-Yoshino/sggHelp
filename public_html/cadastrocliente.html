@@ -16,19 +16,29 @@
              text-align: center;
             } 
             h2{
-             font-size:14px;
+             font-size:18px;
              text-align: justify;
-             font-style: oblique;
+             font-style: inherit;
             } 
            p{
-             font-size:12px;
+             font-size:16px;
              text-align: justify;
-            } 
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
         </style>
     </head>
     <body>
         <h1>Cadastro de Cliente</h1>
-        <img src="ssss" alt="dddd"/>
+        <img src="img/cadastroclienteF.png" alt="Cadastro de Cliente Pessoa Fisica" title="Cadastro Cliente Pessoa Fisica" width="600" height="415"/>
+        <img src="img/cadastroclienteJ.png" alt="Cadastro de Cliente Pessoa Juridica" title="Cadastro Cliente Pessoa Juridica" width="600" height="415"/>
         <br/>
         <p>A tela de Cadastro de Cliente tem como objetivo de cadastrar clientes de pessoa fisica ou jurídica para poder realizar Orçamento ou Pedido de serviço(s).</p>
         <br/>
@@ -53,12 +63,29 @@
         <h2>Para Pesquisar:</h2>
         <p>Clique no botão Localizar para realizar pesquisas, aqui o usuario podera estar selecionando opções e filtros para a busca.</p>
         <br/>
-        <table>
+        <table class="table1">
         <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
-        <tr><td>msg1</td><td>msg1</td><td>msg1</td></tr>
-        <tr><td>msg1</td><td>msg1</td><td>msg1</td></tr>
-        <tr><td>msg1</td><td>msg1</td><td>msg1</td></tr>
-        <tr><td>msg1</td><td>msg1</td><td>msg1</td></tr>
+        <tr><td>Informe a cidade!</td><td>Cidade não foi selecionado.</td><td>Selecionar a cidade.</td></tr>
+        <tr><td>Informe o Nome!</td><td>O nome/firma não foi informado.</td><td>Informar o nome/firma.</td></tr>
+        <tr><td>Informe o Orgão emissor!</td><td>Orgão emissor não informado.</td><td>Informar o orgão emissor.</td></tr>
+        <tr><td>Informe Inscrição Estadual!</td><td>Inscrição estadual não informado.</td><td>Informar a inscrição estadual.</td></tr>
+        <tr><td>O tamanho do Orgão emissor deve ser 2 caracteres!</td><td>Ter mais que duas letra no Orgão emissor.</td><td>Informar a sigla de 2 digitos do Orgão emissor.</td></tr>
+        <tr><td>O tamanho da Inscrição Estadual deve ser 2 caracteres!</td><td>Ter mais que duas letra na Inscrição Estadual.</td><td>Informar a sigla de 2 digitos na Inscrição Estadual.</td></tr>
+        <tr><td>Informe o endereço!</td><td>Endereço não informado.</td><td>Informar o endereço.</td></tr>
+        <tr><td>Inforem o Número!</td><td>Número não informado.</td><td>Informar o número.</td></tr>
+        <tr><td>Inforem pelomenos o celular ou telefone!</td><td>Celular e/ou Telefone não foi informado.</td><td>Informar pelo menos o número do celular e/ou telefone.</td></tr>
+        <tr><td>Inforem o CEP!</td><td>CEP não informado.</td><td>Informar o CEP.</td></tr>
+        <tr><td>E-Mail Invalido!</td><td>E-mail informado é invalido.</td><td>Verificar o e-mail se foi digitado corretamente.</td></tr>
+        <tr><td>Inforem o CPF!</td><td>CPF não informado.</td><td>Informar o CPF.</td></tr>
+        <tr><td>CPF Invalido!</td><td>CPF informado é invalido.</td><td>Verificar o CPF se foi digitado corretamente.</td></tr>
+        <tr><td>Inforem o RG!</td><td>RG não informado.</td><td>Informar o RG.</td></tr>
+        <tr><td>Inforem uma data menor que a data de hoje!</td><td>A data de nascimento deve ser menor que a atual.</td><td>Informar uma data menor que a do dia.</td></tr>
+        <tr><td>Inforem o CNPJ!</td><td>CNPJ não informado.</td><td>Informar o CNPJ.</td></tr>
+        <tr><td>Inforem a Rasão Social!</td><td>Rasão social não informado.</td><td>Informar o Rasão Social.</td></tr>
+        <tr><td>Erro ao recuperar!</td><td>Problema com o banco.</td><td>Verificar a conexão com o Banco de Dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Cliente ja cadastrado!</td><td>Cliente já está cadastrasdo no sistema.</td><td>Caso seja um cliente diferente, verifique se o CPF ou CNPJ informado esteja correto.</td></tr>
+        <tr><td>Erro ao Gravar!</td><td>Erro ao gravar no Banco de Dados.</td><td>Verificar a conexão com o Banco de Dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao excluir!</td><td>Erro ao excluir o Cliente do banco de dados.</td><td>Verificar a conexão com o Banco de Dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
         </table>
     </body>
 </html>
