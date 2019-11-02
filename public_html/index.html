@@ -3,15 +3,79 @@
 <html>
     <head>
         <style type="text/css">
-            #titulo1{
+            .titulo1{
              padding:10px;
-             font-size:20px;
+             font-size:25px;
              border:1px solid #325A8C;
              background: #325A8C;
              color:#FFF;
              box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
              text-align: center;
             } 
+            
+            .titulo2{
+             padding:10px;
+             font-size:25px;
+             border:1px solid #325A8C;
+             background: #22B14C;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            
+            .titulo3{
+             padding:10px;
+             font-size:25px;
+             border:1px solid #325A8C;
+             background: #0EC0C5;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            
+            .titulo4{
+             padding:10px;
+             font-size:25px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            
+            .titulo5{
+             padding:10px;
+             font-size:25px;
+             border:1px solid #325A8C;
+             background: #D20000;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            
+            .item1{
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 0 0 20px;
+            font-size:20px;
+            border: 1px solid #325A8C;
+            border-radius: 6px;
+            }
+            .item1::before{
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding:0 40px;
+            font-size:20px;
+            background: #FFFFFF;
+            border-right: 1px solid #325A8C;
+            color: #0EC0C5;
+            }
+            a{
+                margin-left: 90px;
+            }
         </style>
         
         <title>Manual do Usuario</title>
@@ -19,15 +83,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Instalando o Sistema</h1>
-        <h2>xxxx</h2>
-        <h1>Inicio do Sistema</h1>
-        <h2>xxxx</h2>
-        <h1>Cadastro Basico</h1>
-        <h2><a href="../SGGOnlineHelp/cadastrocliente.html">Cadastro de Cliente</a></h2>
-        <h1>Cadastro Fundamental</h1>
-        <h2>xxxx</h2>
-        <h1>Relatorio</h1>
-        <h2>xxxx</h2>
+        <h1 class="titulo1">Instalando o Sistema</h1>
+        <h2 class="item1">xxxx</h2>
+        
+        <h1 class="titulo2">Inicio do Sistema</h1>
+        <h2 class="">xxxx</h2>
+        
+        <h1 class="titulo3">Cadastro Basico</h1>
+        <h2 class="item1" title="01"><a href="../SGGOnlineHelp/cadastroestado.html">Cadastro de Estado</a></h2>
+        <h2 class="item1" title="02"><a href="../SGGOnlineHelp/cadastrocidade.html">Cadastro de Cidade</a></h2>
+        <h2 class="item1" title="03"><a href="../SGGOnlineHelp/cadastrocliente.html">Cadastro de Cliente</a></h2>
+        <h2 class="item1" title="04"><a href="../SGGOnlineHelp/cadastrofuncionario.html">Cadastro de Funcionario</a></h2>
+        <h2 class="item1" title="05"><a href="../SGGOnlineHelp/cadastrofornecedor.html">Cadastro de Fornecedor</a></h2>
+        <h2 class="item1" title="06"><a href="../SGGOnlineHelp/cadastroempresa.html">Cadastro de Empresa????</a></h2>
+        <h2 class="item1" title="07"><a href="../SGGOnlineHelp/cadastroservico.html">Cadastro de Serviço</a></h2>
+        <h2 class="item1" title="08"><a href="../SGGOnlineHelp/cadastroservico_detalhe.html">Cadastro de Serviço Detalhe</a></h2>
+        <h2 class="item1" title="09"><a href="../SGGOnlineHelp/cadastroproduto.html">Cadastro de Produto</a></h2>
+        <h2 class="item1" title="10"><a href="../SGGOnlineHelp/cadastrofolha.html">Cadastro de Folha</a></h2>
+        <h2 class="item1" title="11"><a href="../SGGOnlineHelp/cadastrotipoconta.html">Cadastro de Tipoconta</a></h2>
+        
+        <h1 class="titulo4">Cadastro Fundamental</h1>
+        <h2 class="">xxxx</h2>
+        
+        <h1 class="titulo5">Relatorio</h1>
+        <h2 class="">xxxx</h2>
     </body>
 </html>

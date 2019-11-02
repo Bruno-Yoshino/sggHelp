@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro Estado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #0EC0C5;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cadastro de Estados</h1>
+        <img src="img/cadastroestado.png" alt="Cadastro de Estado" title="Cadastro Estado" width="763" height="188"/>
+        <br/>
+        <p>A tela de Cadastro de Estado tem como objetivo de cadastrar estado para poder selecionar o estado em Cadastro de Cidade.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Sigla.</p>
+        <br/>
+        <h2>Para Incluir:</h2>
+        <p>Para incluir um novo Estado, clique no botão Novo com o botão direito do mouse, preencha o campo e clique no botão Gravar para gravar o novo registro.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar um Estado, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir um Estado, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe a Sigla!</td><td>Sigla não informada.</td><td>Informar a sigla.</td></tr>
+        <tr><td>Estao já cadastrado!</td><td>A sigla informada ja está cadastrada.</td><td>Informar uma outra sigla.</td></tr>
+        <tr><td>Erro ao Gravar!</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexão do banco de dados ou a sigla se esta com dois digitos. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir!</td><td>Erro ao excluir o Estado.</td><td>Verificar a conexão com o banco de dados ou verificar se o estado está sendo utilizado em uma Cidade. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        </table>
+    </body>
+</html>

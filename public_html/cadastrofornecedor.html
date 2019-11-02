@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro Fornecedor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #0EC0C5;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cadastro de Fornecedor</h1>
+        <img src="img/cadastrofornecedor.png" alt="Cadastro de Fornecedor" title="Cadastro Fornecedor"/>
+        <br/>
+        <p>A tela de Cadastro de Fornecedor tem como objetivo de cadastrar fornecedores para poder realizar Compras ou somente para manter as informações do fornecedor.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Nome, Estado, Cidade e Telefone e/ou Celular.</p>
+        <h2>Campos não obrigatórios(Dados do Cliente)</h2>
+        <p>e-mail.</p>
+        <br/>
+        <h2>Para Incluir:</h2>
+        <p>Para incluir um novo Fornecedor, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar um Fornecedor, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir um Fornecedor, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe a cidade!</td><td>Cidade não foi selecionada.</td><td>Selecionar a cidade.</td></tr>
+        <tr><td>Informe o Nome!</td><td>Nome não foi informado.</td><td>Informar o Nome.</td></tr>
+        <tr><td>Inforem pelomenos o celular ou telefone!</td><td>Celular ou Telefone não informado.</td><td>Informar pelo moenos o Telefone e/ou Celular.</td></tr>
+        <tr><td>Erro ao Gravar!</td><td>Erro ao gravar em banco de dados.</td><td>Verificar a conexão com o banco de dados. Caso necessário entre em contado com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir o Fornecedor!</td><td>Erro ao excluir em banco de dados.</td><td>Verificar a conexão com o banco de dados. Caso necessário entre em contado com o desenvolvedor.</td></tr>
+        </table>
+    </body>
+</html>

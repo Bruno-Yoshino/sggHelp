@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro Funcionario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #0EC0C5;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cadastro de Funcionario</h1>
+        <img src="img/cadastrofuncionario.png" alt="Cadastro de Funcionario" title="Cadastro Funcionario" width="600" height="415"/>
+        <br/>
+        <p>A tela de Cadastro de Funcionário tem como objetivo de cadastrar funcionários para poder realizar serviços de dia a dia, tais como: Orçamento, Pedido, Ajuste de Estoque (Produto/Folha), Produção, Compra, Receber Conta e Pagar Conta.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Nome/Firma, Estado, Cidade, Endereço, Número, CEP, Telefone e/ou Celular.</p>
+        <h2>Campos não obrigatórios</h2>
+        <p>Complemento e Foto.</p>
+        <br/>
+        <h2>Para Incluir:</h2>
+        <p>Para incluir um novo Funcionário, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar um Cliente, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir um Funcionário, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe a Cidade!</td><td>Cidade não foi selecionada.</td><td>Selecionar a cidade.</td></tr>
+        <tr><td>Informe o Nome!</td><td>Nome não informado.</td><td>Informar o Nome.</td></tr>
+        <tr><td>Informe o Login!</td><td>Login não informado.</td><td>Informar o Login.</td></tr>
+        <tr><td>Informe a Senha!</td><td>Senha não informada.</td><td>Informar a Senha.</td></tr>
+        <tr><td>A senha não pode ter mais que 15 caracteres!</td><td>Senha não pode ter mais que 15 caracteres.</td><td>Informar uma Senha que seja menor que 15 caracteres.</td></tr>
+        <tr><td>Informe o Nivel desse usuraio!</td><td>Nível do usuário não selecionado.</td><td>Selecionar o nível do Usuário.</td></tr>
+        <tr><td>Informe o Orgão emissor!</td><td>Orgão emissor não informado.</td><td>Informar o Orgão emissor.</td></tr>
+        <tr><td>Orgão emissor não pode ter mais que 2 caracteres!</td><td>Orgão emissor com mais que dois caracteres.</td><td>Informar o Orgão emissor com dois caracteres.</td></tr>
+        <tr><td>Informe o endereço!</td><td>Endereço não informado.</td><td>Informar o Endereço.</td></tr>
+        <tr><td>Inforem o Número!</td><td>Número não informado.</td><td>Informar o Número.</td></tr>
+        <tr><td>Inforem pelomenos o celular ou telefone!</td><td>Telefone ou Celular não informado.</td><td>Informar o Telefone e/ou Celular.</td></tr>
+        <tr><td>Inforem o CEP!</td><td>CEP não informado.</td><td>Informar o CEP.</td></tr>
+        <tr><td>CPF ja Cadastrado!</td><td>Funcionario com CPF informado já está cadastrado.</td><td>Verificar ou informar um outro CPF.</td></tr>
+        <tr><td>A senha não são iguais!</td><td>A senha de confirmação não coincide com a senha.</td><td>Verificar se a senha foi informada corretamente.</td></tr>
+        <tr><td>Informe o RG!</td><td>RG não informado.</td><td>Informar o RG.</td></tr>
+        <tr><td>Informe o CPF!</td><td>CPF não informado.</td><td>Informar o CPF.</td></tr>
+        <tr><td>CPF invárido!</td><td>CPF incorreto.</td><td>Verificar se o CPF foi informado corretamente.</td></tr>
+        <tr><td>Erro ao Gravar!</td><td>Erro ao gravar no Banco de Dados.</td><td>Verificar a conexão com o baco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Contratar!</td><td>Erro ao gravar no Banco de Dados.</td><td>Verificar a conexão com o baco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Contratar!</td><td>Erro ao gravar no Banco de Dados.</td><td>Verificar a conexão com o baco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Funcionario não Encontrado!</td><td>Funcionário não encontrado.</td><td>Verificar o campo de busca. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Demitir o Funcioanrio!</td><td>Erro ao demitir o funcionário.</td><td>Verificar a conexão com o baco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Como existe apenas um Administrador, não sera permitido alterar o nivel!</td><td>Existe apenas um funcionário com nível de Administrador.</td><td>Inserir um outro funcionário com o mesmo nível para poder excluir ou alterar.</td></tr>
+        </table>
+    </body>
+</html>
