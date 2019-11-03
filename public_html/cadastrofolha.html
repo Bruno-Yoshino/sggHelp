@@ -41,12 +41,14 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Cadastro de Folha</h1>
-        <img src="img/cadastrocidade.png" alt="Cadastro de Folha" title="Cadastro Cliente Folha" />
+        <img src="img/cadastrofolha.png" alt="Cadastro de Folha" title="Cadastro Folha" />
         <br/>
-        <p>A tela de Cadastro de Folha tem como objetivo de cadastrar cidades para poder ser utilizados em Cadastro de Funcionarios, Cadastro de Cliente, Cadastro da Empresa e Cadastro de Fornecedor.</p>
+        <p>A tela de Cadastro de Folha tem como objetivo de cadastrar folhas para poder ser utilizados em Ajustar Estoque de Folha, Compra e Produção.</p>
         <br/>
         <h2>Campos obrigatórios</h2>
-        <p>Nome e Estado.</p>
+        <p>Tamanho, Descrição, Altura e Largura.</p>
+        <h2>Campos não obrigatórios</h2>
+        <p>Ativo.</p>
         <br/>
         <h2>Para Incluir:</h2>
         <p>Para incluir uma nova Folha, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
@@ -62,9 +64,15 @@ and open the template in the editor.
         <br/>
         <table class="table1">
         <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
-        <tr><td>Informe a Folha!</td><td>Folha não foi informada.</td><td>Informar a Folha.</td></tr>
-        <tr><td>Folha já cadastrado com o Estado selecioando!</td><td>Folha ja está cadastrada com o estado selecionado.</td><td>Informar um outro nome ou trocar de estado.</td></tr>
+        <tr><td>Inforem a Descrição!</td><td>Descrição não foi informada.</td><td>Informar a Descrição.</td></tr>
+        <tr><td>Inforem a Altura!</td><td>Altura não foi informada.</td><td>Informar a Altura.</td></tr>
+        <tr><td>Inforem a Largura!</td><td>Largura não foi informada.</td><td>Informar a Largura.</td></tr>
+        <tr><td>A Altura não pode ser menor ou igual a 0!</td><td>Altura informada é mero ou igual a 0.</td><td>Informar uma Altura maior que 0.</td></tr>
+        <tr><td>A Largura não pode ser menor ou igual a 0!</td><td>Largura informada é mero ou igual a 0.</td><td>Informar uma Largura maior que 0.</td></tr>
+        <tr><td>Inforem o Tamanho!</td><td>Tamanho não foi informado.</td><td>Informar o Tamanho.</td></tr>
+        <tr><td>Tamanho ja cadastrado com a Descrição!</td><td>Tamanho informado ja existe cadastrado com a descrição em banco de dados.</td><td>Informar um outro Tamanho e/ou Descrição.</td></tr>
         <tr><td>Erro ao Gravar!</td><td>Erro ao gravar.</td><td>Verificar a conexão com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Alterar!</td><td>Erro ao Alterar.</td><td>Verificar a conexão com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
         <tr><td>Erro ao Excluir!</td><td>Erro ao excluir.</td><td>Verificar a conexão com o banco de dados ou verificar se a folha selecionada não esta sendo utilizada em outro(s) cadastro(s). Caso necessario entre em contato com o desenvolvedor.</td></tr>
         </table>
     </body>
