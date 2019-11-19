@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fechar Caixa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fechar Caixa</h1>
+        <img src="img/movfecharcaixa.png" alt="Fechar caixa" title="Fechar caixa" />
+        <br/>
+        <p>Objetivo da tela de Fechar Caixa é fechar a caixa aberto durante a espedição.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Valor em Caixa.</p>
+        <br/>
+        <h2>Para Fechar:</h2>
+        <p>Ao carregar a tela, o sistema automaticamente libera o campo para o preenchimento. Após o preenchimento do campo, clique no botão Gravar para fechar o caixa.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe o Valor atual do Caixa!</td><td>Não informado o valor do Caixa.</td><td>Informar o valor.</td></tr>
+        <tr><td>Altere o Valor!</td><td>Caso tenha recusado a gravação.</td><td>Altear o valor do caixa.</td></tr>
+        <tr><td>Não existe um caixa Aberto! A pagina sera fechada!</td><td>Não existe caixa aberto.</td><td>Abrir um caixa.</td></tr>
+        <tr><td>ERRO</td><td>Erro ao fechar o caixa.</td><td>Verificar a conexção com o banco de dados. Caso necessário entre em contato com o desenvolvedor.</td></tr>
+        </table>
+    </body>
+</html>
