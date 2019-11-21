@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cheque</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Orçamento</h1>
+        <img src="img/movcheque.png" alt="Cheque" title="Cheque" />
+        <br/>
+        <p>A tela de cheque tem como objetivo de lançar cheque(s) recebido(s) de um cliente e gerenciar se o cheque foi compençado ou não.</p>
+        <br/>
+        <h2>Campos obrigatórios (Dados do cheque)</h2>
+        <p>Valor, Pré datado, Nome da pessoa do cheque, CPF do Dono do Cheque, Número da Agência, Número da Conta, Número do Banco e Número do Cheque.</p>
+        <br/>
+        <h2>Campos obrigatórios (Para compensar)</h2>
+        <p>Data compensado.</p>
+        <br/>
+        <h2>Campos não obrigatórios</h2>
+        <p>Observação, Nome do Cliente.</p>
+        <br/>
+        <h2>Para Incluir:</h2>
+        <p>Para registrar um novo Cheque, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar um Cheque, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir um Cheque, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <h2>Para Compensar cheque:</h2>
+        <p>Para compensar um Cheque, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Compensar. Informe a data compensado, se foi compensado e seleciona o motivo. Após o término, clique no botão Gravar para compensar o cheque. </p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe o Dono do Cheque!</td><td>O Dono não foi informado.</td><td>Informar o Dono.</td></tr>
+        <tr><td>Informe o CPF!</td><td>CPF não informado.</td><td>Informar o CPF.</td></tr>
+        <tr><td>Informe o Valor do Cheque!</td><td>Valor do cheque não foi informado.</td><td>Informar o valor do cheque.</td></tr>
+        <tr><td>A data do Predata é menor que a Data Recebido!</td><td>A data informado no Predata é menor que a Data Recebido.</td><td>Informar um Predata maior que a Data recebido.</td></tr>
+        <tr><td>Informe o Nuúmero da Agencia!</td><td>Número da agencia não foi informada.</td><td>Informar o Número da agencia.</td></tr>
+        <tr><td>Informe o Nuúmero da Conta!</td><td>Número da conta não foi informada.</td><td>Informar o Número da conta.</td></tr>
+        <tr><td>Informe o Nuúmero do Banco!</td><td>Número do Banco não foi informado.</td><td>Informar o Número do banco.</td></tr>
+        <tr><td>Informe o Nuúmero do Cheque!</td><td>Número do Cheque não foi informado.</td><td>Informar o Número do cheque.</td></tr>
+        <tr><td>A data Compensado é menor que a Data Recebido!</td><td>A Data da compensado informado é menor que a Data Recebido.</td><td>Informar uma data maior que a Data Recebida.</td></tr>
+        <tr><td>ERRO</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir!</td><td>O registro não pode ser excluido.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

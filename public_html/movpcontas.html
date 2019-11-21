@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagar Conta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pagar Conta</h1>
+        <img src="img/movpcontas.png" alt="Pagar Conta" title="Pagar Conta" />
+        <br/>
+        <p>A tela de Pagar Conta tem como objetivo de registrar as contas que foram pagas.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Caixa, Data pagamento e Valor pago.</p>
+        <br/>
+        <h2>Campos não obrigatórios</h2>
+        <p>Local.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar uma conta, selecione o registro na tabela e clique no botão Alterar ou clique com dois cliques sobre o registro. Após o preencher os campos, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Estornar:</h2>
+        <p>Para estornar uma conta já paga, clique no botão Estornar, busque um registro e selecione o registro com dois cliques para ser Estornado. Agiuarde um momento que será exibido uma mensagem informando que foiestornado.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Exixte parcelas anteriores que ainda não foram pagos!</td><td>Existe parcela anterior que não foi paga.</td><td>Pagar a parcela anterior.</td></tr>
+        <tr><td>Informe o valor a ser pago!</td><td>Valor não foi informado.</td><td>Informar o valor pago.</td></tr>
+        <tr><td>Valor precisa ser maior ou igual a 0!</td><td>Valor informado é maior ou igual a 0.</td><td>Informar um valor maior que 0.</td></tr>
+        <tr><td>O saldo do caixa selecionado é menor que o valor a ser pago! Selecione outro caixa</td><td>Saldo da caixa selecionado é menor que o Valor informado.</td><td>Selecionar uma outra caixa ou informar um valor pago menor ou igual.</td></tr>
+        <tr><td>Selecione o Caixa!</td><td>O caixa não foi selecionado.</td><td>Selecionar um caixa.</td></tr>
+        <tr><td>Não pode ser estornado!</td><td>A conta selecionada não pode ser estornada, pelo fato de ser uma parcela antiga.</td><td>Selecionar a ultima parcela (parcela mais nova) dessa conta.</td></tr>
+        <tr><td>Você deve selecionar um registro</td><td>Deve selecionar um registro.</td><td>Selecionar um registro.</td></tr>
+        <tr><td>ERRO</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

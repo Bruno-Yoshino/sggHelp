@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ajustar Caixa Banco</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ajustar Caixa Banco</h1>
+        <img src="img/ajustarcaixabanco.png" alt="Ajustar Caixa Banco" title="Ajustar Caixa Banco" />
+        <br/>
+        <p>A tela de ajustar caixa banco tem como objetivo de adicionar ou retirar (creditar ou debitar) dinheiro de uma caixa de um banco cadastrado.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Saldo a ser Debitado/Creditado e o Tipo (Debitar ou Creditar).</p>
+        <br/>
+        <h2>Para Ajustar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca. Clicar duas vezes sobre o registro para retornar. Após o retorno, o sistema automaticamente libera os campos, preencha os campos e clique no botão Gravar para alterar registro.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe o valor!</td><td>O valor a ser retirado não foi informado.</td><td>Informar o Valor.</td></tr>
+        <tr><td>Valor a ser retirado é maior que o saldo Atual!</td><td>O valor informado é maior que está no banco.</td><td>Informar um valor menor ou igual a Saldo Atual.</td></tr>
+        <tr><td>Erro</td><td>Erro ao Alterar.</td><td>Verificar a conexão com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

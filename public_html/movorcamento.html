@@ -40,22 +40,23 @@ and open the template in the editor.
         </style>
     </head>
     <body>
-        <h1>Fechar Caixa</h1>
+        <h1>Orçamento</h1>
         <img src="img/movorcamento.png" alt="Orçamento" title="Orçamento" />
         <br/>
-        <p>A tela de orçamento tem como objetivo de realizar um um orçamnto de serviço solicitado pelo cliente.</p>
+        <p>A tela de orçamento tem como objetivo de realizar um orçamento de serviço solicitado pelo cliente.</p>
         <br/>
         <h2>Campos obrigatórios (Para orçamento)</h2>
-        <p>.</p>
+        <p>Nome do Cliente e a Data de Vencimento.</p>
         <br/>
         <h2>Campos obrigatórios (Para serviço)</h2>
-        <p>.</p>
+        <p>Serviço, Quantidade e Valor/unitário.</p>
         <br/>
         <h2>Campos obrigatórios (Para detalhe)</h2>
-        <p>.</p>
+        <p>Descrição do Serviço.</p>
+        <p>Dependendo da descrição selecionado: Numeração, Vias ou Outros.</p>
         <br/>
         <h2>Campos não obrigatórios</h2>
-        <p>.</p>
+        <p>Custos: Papel, Impressão, Acabamento, Arte, Chapa, Mão de Obra, Desconto e Descrição.</p>
         <br/>
         <h2>Para Incluir:</h2>
         <p>Para registrar um novo orçamento, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
@@ -74,31 +75,32 @@ and open the template in the editor.
         <br/>
         <table class="table1">
         <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
-        <tr><td>Informe o Serviço!</td><td> </td><td> </td></tr>
-        <tr><td>Informe a Quantidade!</td><td> </td><td> </td></tr>
-        <tr><td>Informe o Valor!</td><td> </td><td> </td></tr>
-        <tr><td>Informe os Valores!</td><td> </td><td> </td></tr>
-        <tr><td>Custo do papel deve ser maior ou igual a 0!</td><td> </td><td> </td></tr>
-        <tr><td>Custo da Impressão deve ser maior ou igual a 0!</td><td> </td><td> </td></tr>
-        <tr><td>Custo do acabamento deve ser maior ou igual a 0!</td><td> </td><td> </td></tr>
-        <tr><td>Custo da arte deve ser maior ou igual a 0!</td><td> </td><td> </td></tr>
-        <tr><td>Custo da chapa deve ser maior ou igual a 0!</td><td> </td><td> </td></tr>
-        <tr><td>Custo da mão de obra deve ser maior ou igual a 0!</td><td> </td><td> </td></tr>
-        <tr><td>Desconto deve ser maior ou igual a 0!</td><td> </td><td> </td></tr>
-        <tr><td>Informe a numeração Inicial</td><td> </td><td> </td></tr>
-        <tr><td>Informe a numeração Final</td><td> </td><td> </td></tr>
-        <tr><td>A numeração Inicial deve ser maior que 0</td><td> </td><td> </td></tr>
-        <tr><td>A numeração Final deve ser maior que 0</td><td> </td><td> </td></tr>
-        <tr><td>A numeração Inicail não deve ser menor que a numeração Final</td><td> </td><td> </td></tr>
-        <tr><td>Informe a quantidade de Via(s)</td><td> </td><td> </td></tr>
-        <tr><td>A quantidade de Via(s) não pode ser menor ou igual a 0</td><td> </td><td> </td></tr>
-        <tr><td>Informe o campo Outros</td><td> </td><td> </td></tr>
-        <tr><td>Detalhe ja inserido!</td><td> </td><td> </td></tr>
-        <tr><td>Informe o Cliente!</td><td> </td><td> </td></tr>
-        <tr><td>Informe o(s) Serviço(s)!</td><td> </td><td> </td></tr>
-        <tr><td>A data de vencimetno é inferior a data do Orçamento!</td><td> </td><td> </td></tr>
-        <tr><td>ERRO1</td><td> </td><td> </td></tr>
-        <tr><td>Erro ao Excluir! Provavelmente esta sendo usado em Pedido ou em alguma outra Tabela!</td><td> </td><td> </td></tr>
+        <tr><td>Informe o Serviço!</td><td>O serviço não foi informado.</td><td>Selecionar o serviço.</td></tr>
+        <tr><td>Informe a Quantidade!</td><td>A quantidade não foi informada.</td><td>Informar a quantidade.</td></tr>
+        <tr><td>Informe o Valor!</td><td>O valor não foi informado.</td><td>Informar o valor.</td></tr>
+        <tr><td>Informe os Valores!</td><td>Os valores (exceto o preço) não foi informado.</td><td>Informar um valor sendo maior ou igual a 0.</td></tr>
+        <tr><td>Custo do papel deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Custo da Impressão deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Custo do acabamento deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Custo da arte deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Custo da chapa deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Custo da mão de obra deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Desconto deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Informe a numeração Inicial</td><td>A numeração inicial não foi informada.</td><td>Informar a numeração Inicial.</td></tr>
+        <tr><td>Informe a numeração Final</td><td>A numeração final não foi informada.</td><td>Informar a numeração Final.</td></tr>
+        <tr><td>A numeração Inicial deve ser maior que 0</td><td>A numeração informada foi menor ou igual a 0.</td><td>Informar um valor que seja maior que 0.</td></tr>
+        <tr><td>A numeração Final deve ser maior que 0</td><td>A numeração informada foi menor ou igual a 0.</td><td>Informar um valor que seja maior que 0.</td></tr>
+        <tr><td>A numeração Inicail não deve ser menor que a numeração Final</td><td>A numeração informada no Inicial é maior que a Final.</td><td>Informar uma numeração que a Inicial seja menor que a Final.</td></tr>
+        <tr><td>Informe a quantidade de Via(s)</td><td>A quantidade de Vias não foi informada.</td><td>Informar a quantidade de Vias.</td></tr>
+        <tr><td>A quantidade de Via(s) não pode ser menor ou igual a 0</td><td>A quantidade informada é menor ou igual a 0.</td><td>Informar um valor que seja maior que 0.</td></tr>
+        <tr><td>Informe o campo Outros</td><td>O campo Outros não foi informado.</td><td>Informar o campo Outros.</td></tr>
+        <tr><td>Detalhe ja inserido!</td><td>Detalhe selecionado já foi inserido.</td><td>Selecionar um outro detalhe.</td></tr>
+        <tr><td>Informe o Cliente!</td><td>Cliente não foi informado.</td><td>Informar o cliente.</td></tr>
+        <tr><td>Informe o(s) Serviço(s)!</td><td>Deve ser informado pelo menos um serviço.</td><td>Informar pelo menos um serviço.</td></tr>
+        <tr><td>A data de vencimetno é inferior a data do Orçamento!</td><td>A data de vencimento informado é menor que a data do orçamento.</td><td>Informar uma data que seja maior ou igual a do orçamento.</td></tr>
+        <tr><td>ERRO1</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir! Provavelmente esta sendo usado em Pedido ou em alguma outra Tabela!</td><td>O registro não pode ser excluido por estar sendo utilizado em outra entidade.</td><td>Excluir o registro que esta sendo utilizado.</td></tr>
         </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
     </body>
 </html>

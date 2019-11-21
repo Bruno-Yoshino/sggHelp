@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Produção</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pagar Conta</h1>
+        <img src="img/movproducao.png" alt="Produção" title="Produção" />
+        <br/>
+        <p>A tela de Produção tem como objetivo de gerenciar as situações dos pedidos e os itens a serem utilizados.</p>
+        <br/>
+        <h2>Campos obrigatórios(Para controle de Pedido)</h2>
+        <p>Status e o Funcionário.</p>
+        <br/>
+        <h2>Campos obrigatórios(Para Itens, caso tenha)</h2>
+        <p>Produto e/ou Folha.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar uma produção, selecione o registro na tabela de clientes e clique no botão Alterar ou clique com dois cliques sobre o registro.</p>
+        <br/>
+        <h2>Para Adicionar Item</h2>
+        <p>Após ter selecionado um registro na tabela de clientes, selecione um registro na tabela de Pedido e informe os itens a serem utilizados na Área de Itens.</p>
+        <br/>
+        <h2>Para Salvar</h2>
+        <p>Após ter preenchido e alterado os campos, clique no botão Gravar para salvar as alterações.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>A producao ja existe itens, favor atualize o estoque utilizando o AjustarEstoqueProduto ou AjustarEstoqueFolha!</td><td>Não pode ser adicionado itens, pelo fato de já estar sendo produsido.</td><td>Utilizar o Ajuste de Estoque de Produto ou Folha para retirar pu adicionar item.</td></tr>
+        <tr><td>Informe o Funcionário!</td><td>Funcionário não informado.</td><td>Informar funcionário.</td></tr>
+        <tr><td>ERRO ao Gravar!</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Informe o produto ou/e folha!</td><td>Produto ou folha não foi informado.</td><td>Informe pelomenos um produto e/ou folha.</td></tr>
+        <tr><td>Informe a quantidade de Produto</td><td>A quantidade de produtos não foi informado.</td><td>Informar a quantidade de Produtos.</td></tr>
+        <tr><td>A quantidade de produto informado é maior do que esta reservado e no estoque!</td><td>A quantidade informado é maior do que esta no estoque.</td><td>Informar uma quantidade menor ou igual a do estoque.</td></tr>
+        <tr><td>Informe a quantidade de Folha</td><td>Deve selecionar um registro.</td><td>Selecionar um registro.</td></tr>
+        <tr><td>A quantidade de folha informada é maior do que esta reservado e no estoque!</td><td>A quantidade informado é maior do que esta no estoque.</td><td>Informar uma quantidade menor ou igual a do estoque.</td></tr>
+        <tr><td>Produto ja esta inselido!</td><td>Produto informado já está inserido.</td><td>Selecionar um outro produto.</td></tr>
+        <tr><td>Folha ja inselido!</td><td>Folha informado já está inserido.</td><td>Informar uma outra folha.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Despesa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Despesa</h1>
+        <img src="img/movdespesa.png" alt="Despesa" title="Despesa" />
+        <br/>
+        <p>A tela de despesa tem como objetivo de lançar despesas geradas na empresa.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Tipo, Valor do documento, Data vencimento e Pagamento.</p>
+        <br/>
+        <h2>Campos não obrigatórios</h2>
+        <p>Nome da conta e Código de Barras.</p>
+        <br/>
+        <h2>Para Incluir:</h2>
+        <p>Para registrar uma nova despesa, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar uma nova despesa, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir uma nova despesa, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>ERRO ao Gravar</td><td>Erro ao Gravar</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Informe o valor do Documento!</td><td>O valor do documento não foi informado.</td><td>Informar o valor do documento.</td></tr>
+        <tr><td>Informe o valor Pago!</td><td>O valor pago não foi informado.</td><td>Informar o valor pago.</td></tr>
+        <tr><td>Data de vencimento não pode ser moneor que hoje!</td><td>A data de vencimento informado não pode ser menor que a data atual.</td><td>Informar uma data maior que atual.</td></tr>
+        <tr><td>Informe a data de Vencimento!</td><td>Data de vencimento não informado.</td><td>Informar a data de vencimento.</td></tr>
+        <tr><td>Informe a data do pagamento!</td><td>A data de pagamento não foi informado.</td><td>Informar a data de pagamento.</td></tr>
+        <tr><td>ErroA</td><td>Erro ao alterar.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>A conta ja foi paga!</td><td>A conta ja foi paga.</td><td>Selecionar uma outra conta.</td></tr>
+        <tr><td>ERRO</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir!</td><td>O registro não pode ser excluido.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lançar Compra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lançar Compra</h1>
+        <img src="img/movcompra.png" alt="Lançar Compra" title="Lançar Compra" />
+        <br/>
+        <p>A tela de Lançar compra tem como objetivo de lançar compras realizadas pela empresa. Podera estar lançando compra de produto(s) e/ou folha(s).</p>
+        <br/>
+        <h2>Campos obrigatórios (Para Produto)</h2>
+        <p>Produto, Quantidade e Preço Unitario.</p>
+        <br/>
+        <h2>Campos obrigatórios (Para Folha)</h2>
+        <p>Folha/Tamanho, Quantidade e Preço Unitario.</p>
+        <br/>
+        <h2>Campos não obrigatórios</h2>
+        <p>Fornecedor.</p>
+        <br/>
+        <h2>Para Incluir:</h2>
+        <p>Para registrar uma nova compra, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar uma compra, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir uma compra, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe a Folha!</td><td>A folha não foi informada.</td><td>Informar a folha.</td></tr>
+        <tr><td>O item não pode ser inserido!</td><td>Caso tenha recusado a somar o item.</td><td>Selecionar um outro produto/folha.</td></tr>
+        <tr><td>Ao alterar essa quantidade o estoque ficara negativa! Por esse motivo, não pode ser alterado!</td><td>Ao realizar a auteração, o estoque do produto/folha fica abaixo de 0.</td><td>Informar uma outra quantidade.</td></tr>
+        <tr><td>Informe o Produto!</td><td>O produto não foi informado.</td><td>Informar o produto.</td></tr>
+        <tr><td>Informe a quantidade! A Quantidade precisa ser mairo que 0!</td><td>A quantidade informada é menor ou igual a 0.</td><td>Informar uma quantidade maior que 0.</td></tr>
+        <tr><td>Informe o valor! O Valor precisa ser mairo que 0!</td><td>O valor informado é menor ou igual a 0.</td><td>Informa um valor maior que 0.</td></tr>
+        <tr><td>Selecione uma linha!</td><td>Não foi selecionado uma linha.</td><td>Selecionar um registro na tabela.</td></tr>
+        <tr><td>Não pode ser excluido pelo fato do estque deste produto ficar negativo!</td><td>A quantidade desse produto no estoque ficara menor que 0.</td><td>Selecionar um outro registro.</td></tr>
+        <tr><td>Não pode ser excluido pelo fato do estque desta Folha ficar negativa!</td><td>A quantidade dessa folha no estoque ficara menor que 0.</td><td>Selecionar um outro registro.</td></tr>
+        <tr><td>Esta compra não pode ser alterada pelo fato de já existir uma ou mais parcelas paga!</td><td>Como já existe uma parte da conta já paga, o sistema não permite a auteração ou exclusão.</td><td>Selecionar uma outra compra.</td></tr>
+        <tr><td>Ja existe uma ou mais parsela paga! Não pode ser excluido!</td><td>Como já existe uma parte da conta já paga, o sistema não permite a auteração ou exclusão.</td><td>Selecionar uma outra compra.</td></tr>
+        <tr><td>Não pode ser excluido pelo fato do estoque ficar negativo!</td><td>A quantidade do estoque de produto/folha ficará negativa.</td><td>Selecionar uma outra compra.</td></tr>
+        <tr><td>Erro ao Gravar</td><td>.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir!</td><td>.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>ERRO</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir!</td><td>O registro não pode ser excluido.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

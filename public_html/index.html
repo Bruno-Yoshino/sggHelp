@@ -53,6 +53,16 @@
              text-align: center;
             } 
             
+            .titulo6{
+             padding:10px;
+             font-size:25px;
+             border:1px solid #00ffff;
+             background: #32cd32;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            
             .item1{  /*Titulo 1*/
             position: relative;
             height: 60px;
@@ -159,7 +169,27 @@
             text-align: justify;
             }
             
-
+            .item6{ /*Titulo 6*/
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 0 0 20px;
+            font-size:20px;
+            border: 1px solid #32cd32;
+            border-radius: 6px;
+            }
+            .item6::before{
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding:0 40px;
+            font-size:20px;
+            background: #FFFFFF;
+            border-right: 15px solid #32cd32;
+            color: #0EC0C5;
+            text-align: justify;
+            }
             
             a{
                 margin-left: 120px;
@@ -171,11 +201,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <h2 class="item5" title="01"><a href="../SGGOnlineHelp/intro.html">Introdução</a></h2> <!--falta-->
+        
         <h1 class="titulo1">Instalando o Sistema</h1>
-        <h2 class="item1">xxxx</h2>
+        <h2 class="item1" title="01"><a href="../SGGOnlineHelp/jdk.html">Instalando o JDK</a></h2>
+        <h2 class="item1" title="02"><a href="../SGGOnlineHelp/pg.html">Instalando o Banco de Dados - Postgres</a></h2>
+        <h2 class="item1" title="03"><a href="../SGGOnlineHelp/sgg.html">Iniciando o Sistema</a></h2>
         
         <h1 class="titulo2">Inicio do Sistema</h1>
-        <h2 class="">xxxx</h2>
+        <h2 class="item2" title="01"><a href="../SGGOnlineHelp/login.html">Login</a></h2>
+        <h2 class="item2" title="02"><a href="../SGGOnlineHelp/principal.html">Principal/HOME</a></h2>
         
         <h1 class="titulo3">Cadastro Basico</h1>
         <h2 class="item3" title="01"><a href="../SGGOnlineHelp/cadastroestado.html">Cadastro de Estado</a></h2>
@@ -193,23 +228,47 @@
         <h1 class="titulo4" >Cadastro Fundamental</h1>
         <h2 class="item4" title="01"><a href="../SGGOnlineHelp/movabrircaixa.html">Abrir Caixa</a></h2>
         <h2 class="item4" title="02"><a href="../SGGOnlineHelp/movfecharcaixa.html">Fechar Caixa</a></h2>
-        <h2 class="item4" title="03"><a href="../SGGOnlineHelp/.html">Ajustar Caixa Banco</a></h2>
-        <h2 class="item4" title="04"><a href="../SGGOnlineHelp/.html">Ajustar Folha</a></h2>
-        <h2 class="item4" title="05"><a href="../SGGOnlineHelp/.html">Ajustar Produto</a></h2>
-        <h2 class="item4" title="06"><a href="../SGGOnlineHelp/.html">Caixa Banco</a></h2>
-        <h2 class="item4" title="07"><a href="../SGGOnlineHelp/.html">Caixa Retirada</a></h2>
-        <h2 class="item4" title="08"><a href="../SGGOnlineHelp/.html">Cheque</a></h2>
-        <h2 class="item4" title="09"><a href="../SGGOnlineHelp/.html">Despesa</a></h2>
-        <h2 class="item4" title="10"><a href="../SGGOnlineHelp/.html">Lançar Compra</a></h2>
+        <h2 class="item4" title="03"><a href="../SGGOnlineHelp/movajustarcaixabanco.html">Ajustar Caixa Banco</a></h2>
+        <h2 class="item4" title="04"><a href="../SGGOnlineHelp/movajustarfolha.html">Ajustar Folha</a></h2>
+        <h2 class="item4" title="05"><a href="../SGGOnlineHelp/movajustarproduto.html">Ajustar Produto</a></h2>
+        <h2 class="item4" title="06"><a href="../SGGOnlineHelp/movabrircaixabanco.html">Caixa Banco</a></h2>
+        <h2 class="item4" title="07"><a href="../SGGOnlineHelp/movcaixaretirada.html">Caixa Retirada</a></h2>
+        <h2 class="item4" title="08"><a href="../SGGOnlineHelp/movcheque.html">Cheque</a></h2>
+        <h2 class="item4" title="09"><a href="../SGGOnlineHelp/movdespesa.html">Despesa</a></h2>
+        <h2 class="item4" title="10"><a href="../SGGOnlineHelp/movcompra.html">Lançar Compra</a></h2>
         <h2 class="item4" title="11"><a href="../SGGOnlineHelp/movorcamento.html">Orçamento</a></h2>
-        <h2 class="item4" title="12"><a href="../SGGOnlineHelp/.html">Pedido</a></h2>
-        <h2 class="item4" title="13"><a href="../SGGOnlineHelp/.html">Pagar Contas</a></h2>
-        <h2 class="item4" title="14"><a href="../SGGOnlineHelp/.html">Produção</a></h2>
-        <h2 class="item4" title="15"><a href="../SGGOnlineHelp/.html">Receber Contas</a></h2>
+        <h2 class="item4" title="12"><a href="../SGGOnlineHelp/movpedido.html">Pedido</a></h2>
+        <h2 class="item4" title="13"><a href="../SGGOnlineHelp/movpcontas.html">Pagar Contas</a></h2>
+        <h2 class="item4" title="14"><a href="../SGGOnlineHelp/movproducao.html">Produção</a></h2>
+        <h2 class="item4" title="15"><a href="../SGGOnlineHelp/movreceberc.html">Receber Contas</a></h2>
         
+        <h1 class="titulo6" >Consultas</h1>
+        <h2 class="item6" title="01"><a href="../SGGOnlineHelp/consestado.html">Consulta de Estado</a></h2>
+        <h2 class="item6" title="02"><a href="../SGGOnlineHelp/conscidade.html">Consulta de Cidade</a></h2>
+        <h2 class="item6" title="03"><a href="../SGGOnlineHelp/conscliente.html">Consulta de Cliente</a></h2>
+        <h2 class="item6" title="04"><a href="../SGGOnlineHelp/consfunc.html">Consulta de Funcionario</a></h2>
+        <h2 class="item6" title="05"><a href="../SGGOnlineHelp/consforn.html">Consulta de Fornecedor</a></h2>
+        <h2 class="item6" title="06"><a href="../SGGOnlineHelp/consserv.html">Consulta de Serviço</a></h2>
+        <h2 class="item6" title="07"><a href="../SGGOnlineHelp/conssd.html">Consulta de Serviço Detalhe</a></h2>
+        <h2 class="item6" title="08"><a href="../SGGOnlineHelp/consprod.html">Consulta de Produto</a></h2>
+        <h2 class="item6" title="09"><a href="../SGGOnlineHelp/consfolha.html">Consulta de Folha</a></h2>
+        <h2 class="item6" title="10"><a href="../SGGOnlineHelp/constc.html">Consulta de Tipoconta</a></h2>
         
+        <h2 class="item6" title="11"><a href="../SGGOnlineHelp/consaf.html">Consulta Ajustar Folha</a></h2> 
+        <h2 class="item6" title="12"><a href="../SGGOnlineHelp/consap.html">Consulta Ajustar Produto</a></h2> 
+        <h2 class="item6" title="13"><a href="../SGGOnlineHelp/conscr.html">Consulta Caixa Retirada</a></h2>
         
-        <h1 class="titulo5">Relatorio</h1>
-        <h2 class="">xxxx</h2>
+        <h2 class="item6" title="14"><a href="../SGGOnlineHelp/conscheque.html">Consulta Cheque</a></h2>
+        <h2 class="item6" title="15"><a href="../SGGOnlineHelp/conslc.html">Consulta Lançar Compra</a></h2>
+        <h2 class="item6" title="16"><a href="../SGGOnlineHelp/consorc.html">Consulta Orçamento</a></h2>
+        <h2 class="item6" title="17"><a href="../SGGOnlineHelp/consped.html">Consulta Pedido</a></h2>
+        
+        <h1 class="titulo5">Relatório</h1>
+        <h2 class="item5" title="01"><a href="../SGGOnlineHelp/relorc.html">Relatório de Orçamento</a></h2>
+        <h2 class="item5" title="02"><a href="../SGGOnlineHelp/relped.html">Relatório de Pedido</a></h2>
+        <h2 class="item5" title="03"><a href="../SGGOnlineHelp/relaep.html">Relatório de Ajuste de Estoque de Produto</a></h2>
+        <h2 class="item5" title="04"><a href="../SGGOnlineHelp/relaef.html">Relatório de Ajuste de Estoque de Folha</a></h2>
+        <h2 class="item5" title="05"><a href="../SGGOnlineHelp/relnnf.html">Nota não fiscal</a></h2> <!--falta-->
+        <h2 class="item5" title="06"><a href="../SGGOnlineHelp/relcomprovante.html">Comprovante</a></h2> <!--falta-->
     </body>
 </html>

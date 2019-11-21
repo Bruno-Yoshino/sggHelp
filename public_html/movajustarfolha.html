@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ajustar Folha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #22B14C;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ajustar Folha</h1>
+        <img src="img/movajustarfolha.png" alt="Ajustar Folha" title="Ajustar Folha" />
+        <br/>
+        <p>A tela de ajustar folha tem como objetivo de ajustar o estoque de folha. Nesta tela, o usuário posera estar Adicionando ou Retirando Folha.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Serviço, Folha, Quantidade a ser retirado e Observação.</p>
+        <br/>
+        <h2>Para ajustar</h2>
+        <p>Clique no botão novo para liberar os campos para ser preenchidos. Após o preenchimento, clique no botão Gravar para slavar o ajuste.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe a quantidade!</td><td>A quantidade não foi informada.</td><td>Informar a quantidade.</td></tr>
+        <tr><td>Quanrtidade negativa!</td><td>A quantidade informada é menor que 0.</td><td>Informar uma quantidade maior que 0.</td></tr>
+        <tr><td>Informe a observação!</td><td>A observação não foi informada.</td><td>Informar a Observação.</td></tr>
+        <tr><td>A quantidade informada é maior que a quantidade existente no estoque!</td><td>A quantidade informada é maior que a quantidade no estoque.</td><td>Informar uma quantidade que seja menor ou igual a do Estoque.</td></tr>
+        <tr><td>Informe a Folha!</td><td>A folha não foi informada.</td><td>Informar a folha através da busca.</td></tr>
+        <tr><td>Informe o Serviço!</td><td>O serviço não foi informado.</td><td>Informar o serviço atrvés da busca.</td></tr>
+        <tr><td>Erro ao Ajustar Estoque!</td><td>Erro ao gravar.</td><td>Verificar a conexão com o banco de dados. Caso necessario entre em contato com o desenvolvedor..</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

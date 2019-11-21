@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Abrir Caixa Banco</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Abrir Caixa Banco</h1>
+        <img src="img/movabrircaixabanco.png" alt="Abrir caixa banco" title="Abrir caixa banco" />
+        <br/>
+        <p>A tela de abrir caixa banco tem como objetivo de estar cadastrando a conta do banco e o seu saldo para poder estar controlando os pagemntos.</p>
+        <br/>
+        <h2>Campos obrigatórios</h2>
+        <p>Nome da caixa e Saldo.</p>
+        <br/>
+        <h2>Para Inserir:</h2>
+        <p>Clique no botão novo para habilitar os campos e preencha os campos obrigatórios. Após o preenchimento, clique no botão gravar para salvar os registros.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar uma Caixa, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir uma Caixa, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe o nome do Caixa!</td><td>O nome do Caixa não foi informado.</td><td>Informar o nome.</td></tr>
+        <tr><td>Informe o valor!</td><td>Valor não foi informado.</td><td>Informar o valor.</td></tr>
+        <tr><td>Valor negativo!</td><td>Valor informado é negativo.</td><td>Informar o valor maior ou igual a 0.</td></tr>
+        <tr><td>Erro ao abriri Caixa!</td><td>Erro ao abrir o caixa.</td><td>Verificar a conexção com o banco de dados. Caso necessário entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro</td><td>Erro ao excluir o caixa.</td><td>Verificar a conexção com o banco de dados. Caso necessário entre em contato com o desenvolvedor.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

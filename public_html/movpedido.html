@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pedido</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #325A8C;
+             background: #260AC9;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pedido</h1>
+        <img src="img/movpedido.png" alt="Pedido" title="Pedido" />
+        <br/>
+        <p>A tela de pedido tem como objetivo de registrar um pedido de serviço solicitado pelo cliente.</p>
+        <br/>
+        <h2>Campos obrigatórios (Para pedido)</h2>
+        <p>Nome do Cliente.</p>
+        <br/>
+        <h2>Campos obrigatórios (Para serviço)</h2>
+        <p>Serviço, Quantidade e Valor/unitário.</p>
+        <br/>
+        <h2>Campos obrigatórios (Para detalhe)</h2>
+        <p>Descrição do Serviço.</p>
+        <p>Dependendo da descrição selecionado: Numeração, Vias ou Outros.</p>
+        <br/>
+        <h2>Campos obrigatórios (Para entrega)</h2>
+        <p>Forma de pagamento.</p>
+        <br/>
+        <h2>Campos não obrigatórios</h2>
+        <p>Desconto, Valor Extra e Descrição.</p>
+        <br/>
+        <h2>Para Incluir:</h2>
+        <p>Para registrar um novo pedido, clique no botão Novo com o botão direito do mouse, preencha os campos e clique no botão Gravar para gravar o novo registro.</p>
+        <br/>
+        <h2>Para Alterar:</h2>
+        <p>Para alterar um pedido, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Alterar. Após o término, clique no botão Gravar para salvar as alterações. </p>
+        <br/>
+        <h2>Para Entregar (Dar baixa):</h2>
+        <p>Para dar baixa em um pedido, busque um registro através do botão Localizar, selecione o registro com dois cliques e clique no botão Entregar. Após o selecionar a forma de pagamento, clique no botão Gravar para salvar as alterações.</p>
+        <br/>
+        <h2>Para Excluir:</h2>
+        <p>Para excluir um pedido, busque um registro através do botão Localizar e selecione o registro com dois cliques para ser excluido. Após o retorno, clique no botão Excluir para efetivar a operação.</p>
+        <br/>
+        <h2>Para Pesquisar:</h2>
+        <p>Clique no botão Localizar para realizar pesquisas, aqui o usuário poderá estar selecionando opções e filtros para a busca.</p>
+        <br/>
+        <h2>Para Gerar PDF:</h2>
+        <p>Para Gerar PDF, busque um registro através do botão Localizar e selecione o registro com dois cliques. Após o retorno, clique no botão Gerar PDF, selecione o local par salvar, nome do arquivo e clique em OK.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>Informe o Serviço!</td><td>O serviço não foi informado.</td><td>Selecionar o serviço.</td></tr>
+        <tr><td>Informe a Quantidade!</td><td>A quantidade não foi informada.</td><td>Informar a quantidade.</td></tr>
+        <tr><td>Informe o Valor!</td><td>O valor não foi informado.</td><td>Informar o valor.</td></tr>
+        <tr><td>Informe o Valor e a Quantidade!</td><td>Valor e a Quantidade não foi informada.</td><td>Informar o campo Valor e a Quantidade.</td></tr>
+        <tr><td>Valor Extra não deve ser menor que 0!</td><td>O Valor extra informado é menor que 0.</td><td>Informar um valor que seja maior ou igual a 0.</td></tr>
+        <tr><td>Desconto deve ser maior ou igual a 0!</td><td>O custo informado foi menor que 0.</td><td>Informar um custo maior ou igual a 0.</td></tr>
+        <tr><td>Informe a numeração Inicial</td><td>A numeração inicial não foi informada.</td><td>Informar a numeração Inicial.</td></tr>
+        <tr><td>Informe a numeração Final</td><td>A numeração final não foi informada.</td><td>Informar a numeração Final.</td></tr>
+        <tr><td>A numeração Inicial deve ser maior que 0</td><td>A numeração informada foi menor ou igual a 0.</td><td>Informar um valor que seja maior que 0.</td></tr>
+        <tr><td>A numeração Final deve ser maior que 0</td><td>A numeração informada foi menor ou igual a 0.</td><td>Informar um valor que seja maior que 0.</td></tr>
+        <tr><td>A numeração Inicail não deve ser menor que a numeração Final</td><td>A numeração informada no Inicial é maior que a Final.</td><td>Informar uma numeração que a Inicial seja menor que a Final.</td></tr>
+        <tr><td>Informe a quantidade de Via(s)</td><td>A quantidade de Vias não foi informada.</td><td>Informar a quantidade de Vias.</td></tr>
+        <tr><td>A quantidade de Via(s) não pode ser menor ou igual a 0</td><td>A quantidade informada é menor ou igual a 0.</td><td>Informar um valor que seja maior que 0.</td></tr>
+        <tr><td>Informe o campo Outros</td><td>O campo Outros não foi informado.</td><td>Informar o campo Outros.</td></tr>
+        <tr><td>Detalhe ja inserido!</td><td>Detalhe selecionado já foi inserido.</td><td>Selecionar um outro detalhe.</td></tr>
+        <tr><td>Informe o Cliente!</td><td>Cliente não foi informado.</td><td>Informar o cliente.</td></tr>
+        <tr><td>Informe o(s) Serviço(s)!</td><td>Deve ser informado pelo menos um serviço.</td><td>Informar pelo menos um serviço.</td></tr>
+        <tr><td>Não pode ser alterado por estar em execução na Produção</td><td>O serviço selecionado esta em execução.</td><td>Selecionar um outro registro.</td></tr>
+        <tr><td>Você deve selecionar um registro</td><td>Deve selecionar um registro.</td><td>Selecionar um registro.</td></tr>
+        <tr><td>Este orcamento esta Vencido!</td><td>Orçamento selecionado esta vencido.</td><td>Selecionar um outro orçamento.</td></tr>
+        <tr><td>Não existe Caixa Aberto! Sera redirecionado para o menu!</td><td>Não existe um caixa aberto.</td><td>Abrir o caixa.</td></tr>
+        <tr><td>Localize um pedido!</td><td>O pedido não foi localizado.</td><td>Buscar um pedido.</td></tr>
+        <tr><td>ERRO</td><td>Erro ao gravar no banco de dados.</td><td>Verificar a conexção com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        <tr><td>Erro ao Excluir!</td><td>O registro não pode ser excluido por estar sendo utilizado em outra entidade.</td><td>Excluir o registro que esta sendo utilizado.</td></tr>
+        </table>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>
