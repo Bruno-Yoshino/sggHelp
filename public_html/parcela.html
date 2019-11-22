@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Parcela</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            h1{
+             padding:10px;
+             font-size:20px;
+             border:1px solid #f08300;
+             background: #f08300;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            h2{
+             font-size:18px;
+             text-align: justify;
+             font-style: inherit;
+            } 
+           p{
+             font-size:16px;
+             text-align: justify;
+            }
+            .table1 {
+              border: 1px solid gray;
+            }
+            .table1 th, .table1 td {
+              border: 1px solid gray;
+            }
+            .table1 th {
+              background-color: #ccf;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Gerenciamento de Parcelas</h1>
+        <img src="img/parcela.png" alt="Parcela" title="Parcela"/>
+        <br/>
+        <p>A tela de Gerenciamento de parcelas tem como objetivo de gerar parcelas referentes a Compra, Despesa ou Conta a receber de um cliente.</p>
+        <br/>
+        <h2>Para Gerar Parcelas</h2>
+        <p>Após ser redirecionado para a Tela de Gerenciamento de Parcelas, o usuário informa a quantidade de parcelas e o intervalo das parcelas.</p>
+        <p>Os tipos de intervalos são:</p>
+        <p>0 para 1 mes.</p>
+        <p>1 ~ 31 para Dia(s)</p>
+        <p>-1 ~ -3 para Semana(s)</p>
+        <br/>
+        <h2>Para Alterar uma parcela</h2>
+        <p>Selecione um registro e clique no botão Alterar o valor da parcela. Após a alteração, crique em Atualizar.</p>
+        <br/>
+        <h2>Para Gravar</h2>
+        <p>Clique no botão Gravar.</p>
+        <br/>
+        <table class="table1">
+        <tr><th>Mensagem</th><th>Motivo</th><th>Possivel solução</th></tr>
+        <tr><td>A Quantidade de Parcelas precisa ser maior que 0!</td><td>A quantidade informado é menor ou igual a 0.</td><td>Informar uma quantidade maior que 0.</td></tr>
+        <tr><td>Informe o Intervalo! Mais detalhe consulte a informação</td><td>Intervalo não informao.</td><td>Informar o intervalo.</td></tr>
+        <tr><td>Você deve selecionar uma parcela!</td><td>Não foi selecionado uma parcela na tabela.</td><td>Selecionar uma parcela.</td></tr>
+        <tr><td>O valor total das parcelas não são iguais a valor total!</td><td>O valor final não esta igual a valor da parcela.</td><td>Verificar a soma das parcelas. Utilise o Botão Auterar valor para modificar o valor.</td></tr>
+        <tr><td>Informe o Novo valor para a parcela! Não pode ser menor ou igula a 0!</td><td>Valor informado é menor ou igual a 0.</td><td>Informar um valor que seja maior que 0.</td></tr>
+        <tr><td>A nova data não pode ser menor que a data de vencimento especificado no campo "Data de Vencimento"</td><td>A nova data é menor que a data de vencimento.</td><td>Informar uma data que seja maior ou igual a data de vencimento.</td></tr>
+        <tr><td>Informe a Quantidade de Parcelas!</td><td>A quantidade de parcelas não foi informado.</td><td>Informar a quantidade de Parcelas.</td></tr>
+        <tr><td>Informe o Intervalo!</td><td>Intervalo não informado.</td><td>Informar o intervalo.</td></tr>
+        <tr><td>Erro ao Gerar!</td><td>Erro ao gerar as parcelas.</td><td>Verificar a conexão com o banco de dados. Caso necessario entre em contato com o desenvolvedor.</td></tr>
+        </table>
+        <br/>
+        <a href="../SGGOnlineHelp/index.html">voltar</a>
+    </body>
+</html>

@@ -56,8 +56,28 @@
             .titulo6{
              padding:10px;
              font-size:25px;
-             border:1px solid #00ffff;
+             border:1px solid #32cd32;
              background: #32cd32;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            
+            .titulo7{
+             padding:10px;
+             font-size:25px;
+             border:1px solid #f08300;
+             background: #f08300;
+             color:#FFF;
+             box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
+             text-align: center;
+            } 
+            
+            .titulo8{
+             padding:10px;
+             font-size:25px;
+             border:1px solid #2ca9e1;
+             background: #2ca9e1;
              color:#FFF;
              box-shadow:inset 1px 1px 0 rgba(255,255,255,0.5);
              text-align: center;
@@ -191,6 +211,50 @@
             text-align: justify;
             }
             
+            .item7{ /*Titulo 7*/
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 0 0 20px;
+            font-size:20px;
+            border: 1px solid #f08300;
+            border-radius: 6px;
+            }
+            .item7::before{
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding:0 40px;
+            font-size:20px;
+            background: #FFFFFF;
+            border-right: 15px solid #f08300;
+            color: #0EC0C5;
+            text-align: justify;
+            }
+            
+            .item8{ /*Titulo 8*/
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 0 0 20px;
+            font-size:20px;
+            border: 1px solid #2ca9e1;
+            border-radius: 6px;
+            }
+            .item8::before{
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding:0 40px;
+            font-size:20px;
+            background: #FFFFFF;
+            border-right: 15px solid #2ca9e1;
+            color: #0EC0C5;
+            text-align: justify;
+            }
+            
             a{
                 margin-left: 120px;
             }
@@ -211,6 +275,11 @@
         <h1 class="titulo2">Inicio do Sistema</h1>
         <h2 class="item2" title="01"><a href="../SGGOnlineHelp/login.html">Login</a></h2>
         <h2 class="item2" title="02"><a href="../SGGOnlineHelp/principal.html">Principal/HOME</a></h2>
+        
+        <h1 class="titulo7">Telas auxiliares e Tipo de Botões</h1>
+        <h2 class="item7" title="01"><a href="../SGGOnlineHelp/botoes.html">Tipo de Botões</a></h2> 
+        <h2 class="item7" title="02"><a href="../SGGOnlineHelp/parcela.html">Gerenciar Parcela</a></h2>
+        <h2 class="item7" title="03"><a href="../SGGOnlineHelp/cds.html">Check Detalhe Serviço (Checar Detalhe Serviço)</a></h2>
         
         <h1 class="titulo3">Cadastro Basico</h1>
         <h2 class="item3" title="01"><a href="../SGGOnlineHelp/cadastroestado.html">Cadastro de Estado</a></h2>
@@ -253,11 +322,9 @@
         <h2 class="item6" title="08"><a href="../SGGOnlineHelp/consprod.html">Consulta de Produto</a></h2>
         <h2 class="item6" title="09"><a href="../SGGOnlineHelp/consfolha.html">Consulta de Folha</a></h2>
         <h2 class="item6" title="10"><a href="../SGGOnlineHelp/constc.html">Consulta de Tipoconta</a></h2>
-        
         <h2 class="item6" title="11"><a href="../SGGOnlineHelp/consaf.html">Consulta Ajustar Folha</a></h2> 
         <h2 class="item6" title="12"><a href="../SGGOnlineHelp/consap.html">Consulta Ajustar Produto</a></h2> 
         <h2 class="item6" title="13"><a href="../SGGOnlineHelp/conscr.html">Consulta Caixa Retirada</a></h2>
-        
         <h2 class="item6" title="14"><a href="../SGGOnlineHelp/conscheque.html">Consulta Cheque</a></h2>
         <h2 class="item6" title="15"><a href="../SGGOnlineHelp/conslc.html">Consulta Lançar Compra</a></h2>
         <h2 class="item6" title="16"><a href="../SGGOnlineHelp/consorc.html">Consulta Orçamento</a></h2>
@@ -268,7 +335,12 @@
         <h2 class="item5" title="02"><a href="../SGGOnlineHelp/relped.html">Relatório de Pedido</a></h2>
         <h2 class="item5" title="03"><a href="../SGGOnlineHelp/relaep.html">Relatório de Ajuste de Estoque de Produto</a></h2>
         <h2 class="item5" title="04"><a href="../SGGOnlineHelp/relaef.html">Relatório de Ajuste de Estoque de Folha</a></h2>
-        <h2 class="item5" title="05"><a href="../SGGOnlineHelp/relnnf.html">Nota não fiscal</a></h2> <!--falta-->
-        <h2 class="item5" title="06"><a href="../SGGOnlineHelp/relcomprovante.html">Comprovante</a></h2> <!--falta-->
+        <h2 class="item5" title="05"><a href="../SGGOnlineHelp/relnnf.html">Nota não fiscal</a></h2> 
+        <h2 class="item5" title="06"><a href="../SGGOnlineHelp/relcomprovante.html">Comprovante</a></h2> 
+        
+        <h1 class="titulo8">Possiveis Dúvidas</h1>
+        <h2 class="item8" title="01"><a href="../SGGOnlineHelp/consultabranco.html">Não aparece nada na Consulta</a></h2>
+        <h2 class="item8" title="02"><a href="../SGGOnlineHelp/backup.html">Como realizar o Backup?</a></h2>
+        <h2 class="item8" title="02"><a href="../SGGOnlineHelp/restore.html">Como realizar o Restore do Backup gerado?</a></h2><!--Falta Final-->
     </body>
 </html>
